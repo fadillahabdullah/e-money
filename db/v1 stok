@@ -1,0 +1,4 @@
+CREATE VIEW v1 AS 
+SELECT a.*, IF((SELECT SUM(jumlah) FROM barang_masuk WHERE id_barang = a.id) IS NULL,0,(SELECT SUM(jumlah) FROM barang_masuk WHERE id_barang = a.id)) AS jumlah_masuk, IF((SELECT SUM(jumlah) FROM detail WHERE id_barang = a.id) IS NULL,0,(SELECT SUM(jumlah) FROM detail WHERE id_barang = a.id)) AS jumlah_keluar FROM barang AS a;
+
+SELECT *, (jumlah_masuk - jumlah_keluar) AS stok FROM v1;

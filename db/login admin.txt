@@ -1,0 +1,6 @@
+user admin= 010101
+pass admin= 121212
+
+untuk login sales sudah ada, lgs terisi divalue
+
+untuk login pertama otomatis user dan pass nya default (id)

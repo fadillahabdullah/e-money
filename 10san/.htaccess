@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteRule ^Beranda$ home.php?page=b760 [L]
+RewriteRule ^Barang$ home.php?page=b500 [L]
+RewriteRule ^BarangMasuk$ home.php?page=bm500 [L]
+
+
+RewriteRule ^Sales$ home.php?page=s500 [L]
+RewriteRule ^Gudang$ home.php?page=g500 [L]
+RewriteRule ^Pelanggan$ home.php?page=p500 [L]
+RewriteRule ^Admin$ home.php?page=a500 [L]
+
+
+Options All -Indexes
+
+</IfModule>

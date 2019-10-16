@@ -1,0 +1,9 @@
+CREATE VIEW v_login AS
+SELECT *, 'administrator' AS level, '4dr' AS folder FROM admin UNION 
+SELECT *, 'admin_gudang' AS level, '9we' AS folder FROM gudang UNION 
+SELECT *, 'salesman' AS level, '5ko' AS folder FROM sales;
+
+INSERT INTO admin VALUES('010101','budi','jombang','1990-01-01','','Jombang','30163ebc750b00def9265bd2690d5a54','1');
+
+h67KKL
+

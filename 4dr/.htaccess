@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteRule ^Beranda$ home.php?page=b760 [L]
+RewriteRule ^Barang$ home.php?page=ba500 [L]
+RewriteRule ^Petugas$ home.php?page=sp500 [L]
+RewriteRule ^Santri$ home.php?page=sa500 [L]
+RewriteRule ^Saldo$ home.php?page=saldo500 [L]
+RewriteRule ^Admin$ home.php?page=a500 [L]
+RewriteRule ^Konfirmasi$ home.php?page=konfirmasi500 [L]
+RewriteRule ^Pencairan$ home.php?page=pencairan500 [L]
+RewriteRule ^TransaksiMasuk$ home.php?page=transaksi_masuk500 [L]
+RewriteRule ^TransaksiKeluar$ home.php?page=transaksi_keluar500 [L]
+RewriteRule ^Transaksi$ home.php?page=t121 [L]
+RewriteRule ^laporan$ home.php?page=laporan500 [L]
+RewriteRule ^cetaktransaksi$ lap/ptransaksi.php [L]
+RewriteRule ^setoran$ lap/setoran.php [L]
+Options All -Indexes
+
+</IfModule>
